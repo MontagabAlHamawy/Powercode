@@ -218,6 +218,7 @@ ul {
     height: 30px;
     margin-left: 20px;
 }
+
 /* ****************************************** */
 
 
@@ -229,7 +230,8 @@ ul {
         display: none;
         width: 250px;
     }
-    .sidebar>h3{
+
+    .sidebar>h3 {
         margin-top: 10px;
     }
 
@@ -254,7 +256,8 @@ ul {
         width: 100px;
         left: 50%;
     }
-    .head .search{
+
+    .head .search {
         margin-left: 30px;
     }
 }
