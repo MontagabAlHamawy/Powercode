@@ -1,0 +1,102 @@
+/*start flex */
+
+.d-flex {
+    display: flex;
+}
+
+.alin-c {
+    align-items: center;
+}
+.betwen-flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.jus-c{
+    justify-content: center;
+}
+
+/*end flex */
+.p-relative {
+    position: relative;
+}
+
+/* start padding */
+
+.p-20 {
+    padding: 20px;
+}
+
+.p-10 {
+    padding: 10px;
+}
+.p-15{
+    padding: 15px;
+}
+
+.p-0 {
+    padding: 0;
+}
+
+.pt-20 {
+    padding-top: 20px;
+}
+
+/* end padding */
+/* start margin */
+.m-20 {
+    margin: 20px;
+}
+
+.mt-0 {
+    margin-top: 0;
+}
+
+/* end margin */
+
+/* start color */
+.bg-eee {
+    background-color: #eee;
+}
+
+.bg-white {
+    background-color: white;
+}
+.bg-aqua{
+    background-color: aqua;
+}
+
+.c-black {
+    color: black;
+}
+
+/* end color */
+
+.fs-14 {
+    font-size: 14px;
+}
+
+.red-6 {
+    border-radius: 6px;
+}
+
+.rd-6 {
+    border-radius: 6px;
+}
+
+/* start text */
+.text-c {
+    text-align: center;
+}
+
+/* end text */
+
+/* start list */
+.lis-s {
+    list-style: none;
+}
+
+/* end list */
+.w-full{
+    width: 100%;
+}
