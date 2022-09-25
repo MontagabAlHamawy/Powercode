@@ -31,6 +31,18 @@ ul {
     padding: 0;
 }
 
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: white;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--main-color);
+}
+
 /* *************************************** */
 
 /* sidebar */
@@ -169,7 +181,8 @@ ul {
 .contrlo {
     overflow: hidden;
 }
-.head{
+
+.head {
     background-color: var(--main-color);
 }
 
@@ -205,6 +218,10 @@ ul {
     opacity: 0;
 }
 
+.head .icons .not {
+    cursor: pointer;
+}
+
 .head .icons .not::before {
     content: '';
     position: absolute;
@@ -220,10 +237,110 @@ ul {
     width: 30px;
     height: 30px;
     margin-left: 20px;
+    cursor: pointer;
+}
+
+.bage h1 {
+    margin: 20px 20px;
+    width: max-content;
+    cursor: pointer;
+}
+
+.bage h1::before,
+.bage h1::after {
+    content: '';
+    height: 3px;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+}
+
+.bage h1::before {
+    background-color: white;
+    width: 120px;
+}
+
+.bage h1::after {
+    width: 40px;
+    background-color: black;
+    transition: width 0.3s;
+}
+
+.bage h1:hover::after {
+    width: 120px;
+}
+
+.wrapper {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 /* ****************************************** */
+/* welcome */
+.welcome {
+    overflow: hidden;
+    position: relative;
+}
 
+.welcome .intro img {
+    width: 170px;
+    margin-bottom: -20px;
+}
+
+.welcome .avatar {
+    width: 104px;
+    height: 104px;
+    border: 20px solid white;
+    border-radius: 50%;
+    margin-bottom: -50px;
+    position: relative;
+    top: -10px;
+    transition: 0.3s;
+}
+
+.welcome:hover .avatar {
+    top: -30px;
+}
+
+.welcome .body {
+    margin-bottom: 20px;
+}
+
+.welcome .body>div {
+    flex: 1;
+    font-size: 20px;
+}
+
+.welcome .visit {
+    position: relative;
+    top: 24px;
+    left: 20px;
+    transition: 0.3s;
+}
+
+.welcome .visit:hover {
+    background-color: white;
+    color: var(--main-color);
+    border: 2px solid var(--main-color);
+}
+
+/* ****************************************** */
+.quick-draft textarea {
+    resize: none;
+    min-height: 130px;
+}
+
+.quick-draft .save {
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.quick-draft .save:hover {
+    background-color: white;
+    color: var(--main-color);
+    border: 2px solid var(--main-color);
+}
 
 
 /* ****************************************** */
@@ -262,5 +379,34 @@ ul {
 
     .head .search {
         margin-left: 30px;
+    }
+
+    .wrapper {
+        grid-template-columns: minmax(200px, 1fr);
+        margin-left: 10px;
+        margin-right: 10px;
+        gap: 10px;
+    }
+
+    .welcome .intro {
+        padding: 40px;
+    }
+
+    .welcome .body {
+        margin-bottom: 10px;
+    }
+
+    .welcome .body>div {
+        margin-bottom: 20px;
+        font-size: 30px;
+    }
+
+    .welcome .visit {
+        left: 0;
+        top: -20px;
+    }
+
+    .welcome .intro img {
+        margin-right: -24px;
     }
 }
