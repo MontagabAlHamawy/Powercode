@@ -30,6 +30,11 @@
     justify-content: space-between;
     align-items: center;
 }
+.cen-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .jus-c {
     justify-content: center;
@@ -101,6 +106,9 @@
 .mb-20 {
     margin-bottom: 20px;
 }
+.mb-10 {
+    margin-bottom: 10px;
+}
 
 /* end margin */
 
@@ -119,6 +127,12 @@
 
 .c-main {
     color: var(--main-color);
+}
+.c-main2 {
+    color: var(--main2-color);
+}
+.c-main3 {
+    color: var(--main3-color);
 }
 .bg-main{
     background-color: var(--main-color);
@@ -141,6 +155,13 @@
 }
 .fs-15{
     font-size: 15px;
+}
+
+.fw-bold{
+    font-weight: bold;
+}
+.fs-400{
+    font-weight: 400px;
 }
 
 .red-6 {
