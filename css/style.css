@@ -441,6 +441,10 @@ ul {
 /* ****************************************** */
 
 @media (max-width:767px) {
+    body{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    
     .sidebar {
         display: none;
         width: 250px;
