@@ -5,8 +5,18 @@ body {
 }
 
 :root {
-    --main-color: #0093b7;
+    --main-color: rgb(0, 147, 184);
     --col2: #818180;
+    --main2-color: rgb(245, 158, 11);
+    --main3-color: rgb(34, 197, 94);
+}
+
+input:focus::placeholder {
+    opacity: 0;
+}
+
+textarea:focus::placeholder {
+    opacity: 0;
 }
 
 * {
@@ -51,6 +61,9 @@ ul {
     box-shadow: 0 0 10px #ddd;
     transition: 1s;
     z-index: 10;
+    position: sticky;
+    top: 0;
+    height: 100vh;
 }
 
 .sidebar:hover {
@@ -153,6 +166,10 @@ ul {
     background-color: var(--main-color);
 }
 
+.sidebar:hover ul li a.active {
+    margin-left: 20px;
+}
+
 .sidebar ul li a:hover span,
 .sidebar ul li a.active span {
     color: #fff;
@@ -212,10 +229,6 @@ ul {
 
 .head .search input:focus {
     width: 210px;
-}
-
-.head .search input:focus::placeholder {
-    opacity: 0;
 }
 
 .head .icons .not {
@@ -342,6 +355,88 @@ ul {
     border: 2px solid var(--main-color);
 }
 
+/* ****************************************** */
+.target .target-row .icon {
+    width: 80px;
+    height: 80px;
+    margin-right: 15px;
+}
+
+.target .details {
+    flex: 1;
+}
+
+.target .details .progress {
+    height: 4px;
+}
+
+.target .details .progress>span {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+}
+
+.target .details .progress>span span {
+    position: absolute;
+    bottom: 16px;
+    right: -16px;
+    color: white;
+    padding: 2px 5px;
+    border-radius: 6px;
+    font-size: 12px;
+}
+
+
+.target .details .progress>span span::after {
+    content: '';
+    border-color: transparent;
+    border-width: 5px;
+    border-style: solid;
+    bottom: -10px;
+    position: absolute;
+    transform: translateX(-50%);
+    left: 50%;
+}
+
+.target .details .progress>.blue span {
+    background-color: var(--main-color);
+}
+
+.target .details .progress>.blue span::after {
+    border-top-color: var(--main-color);
+}
+
+.target .details .progress>.orang span {
+    background-color: var(--main2-color);
+}
+
+.target .details .progress>.orang span::after {
+    border-top-color: var(--main2-color);
+}
+
+.target .details .progress>.green span {
+    background-color: var(--main3-color);
+}
+
+.target .details .progress>.green span::after {
+    border-top-color: var(--main3-color);
+}
+
+.blue .progress,
+.blue .icon {
+    background-color: rgba(0, 147, 184, 0.2);
+}
+
+.orang .progress,
+.orang .icon {
+    background-color: rgba(245, 158, 11, 0.2);
+}
+
+.green .progress,
+.green .icon {
+    background-color: rgba(25, 163, 76, 0.603);
+}
 
 /* ****************************************** */
 
